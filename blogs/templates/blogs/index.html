@@ -1,0 +1,35 @@
+{% extends 'blogs/basepage.html' %}
+{% block title %} Blogs - Innovative Learning {% endblock %}
+
+{% block img_blog %} 
+<div class="main-blog">
+  <p class="blog_wel">Welcome to the Blog : Charuni Deshmukh</p>
+  <li class="resp none"><a href="/" id="IL">Innovative Learning</a></li>
+</div>
+{% endblock %}
+{% block index %} 
+<div class="container">
+    <div></div>
+    <div class="card">
+        <img class="card-img" src="/static/blogs/main_img/carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Technology</h5>
+          <p class="card-text">Technology is something that is gaining increasing importance in the world today. Wherever you look, there is technology. Even the device you are using to read this article uses technology. In simple words, technology is when we use science to apply it for practical purposes.</p>
+          <a href="/blogs/tech-blog" class="blog_go">Explore More</a>
+        </div>
+    </div>
+    <div></div>
+    <div class="card">
+        <img class="card-img" src="/static/blogs/main_img/gary-butterfield-YG8rZ323UsU-unsplash.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Curiosity</h5>
+          <p class="card-text">Curiosity is the mother of knowledge. In fact, curiosity acts as a driving force behind many a discovery or invention. It is the mainspring of every advance of human civilization. Curiosity opens new prospects and produces newer interest to further progress.</p>
+          <a href="/blogs/gen-blog" class="blog_go">Explore More</a>
+        </div>
+    </div>
+</div> 
+{% endblock %}
+{% block java_sc %}  
+{% load static %}
+<script src="{% static '/blogs/main_JS/blogjava_sc12345.js' %}"></script>
+{% endblock %}

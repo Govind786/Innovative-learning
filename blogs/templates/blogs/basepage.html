@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="#">
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}  {% endblock %}</title>
+    <link rel="stylesheet" href="{% static '/blogs/all_CSS/blogscss23.css' %}">
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <nav>
+        <div class="class1" id="id1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxvhVB1Wy966mTifl-PhCkOyR-Ql-nBf1mJA&usqp=CAU" alt="Image here" class="logo">
+            {% block img_blog %} {% endblock %}
+            <li class="sh"><a href="/" id="IL">Innovative Learning</a></li>
+            <div class="burger burger-resp">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+    {% block index %}   {% endblock %}
+    {% block Technical-Blogs %}   {% endblock %}
+    {% block General-Blogs %}   {% endblock %}
+    {% block Music %}   {% endblock %}
+    {% block Suggest %}   {% endblock %}
+    <footer>
+        <div class="cent">
+            Copyright &copy; www.Innovative-Learning.com all rights reserved.
+        </div>
+        <div class="cent">
+            <i class="fa fa-instagram" style="font-size:23px;color:white;margin:8px;"></i>
+            Follow me on <a href="https://Instagram.com/__govind__kushwaha" target="_blank">Instagram</a>
+        </div>
+        <div class="cent">
+            <i class="fa fa-youtube" style="font-size:23px;color:white;margin:8px;"></i>
+            Follow me on <a href="https://www.youtube.com/channel/UCeVMnSShP_Iviwkknt83cww" target="_blank">Youtube</a>
+        </div>
+    </footer>
+    
+    {% block java_sc %}   {% endblock %}
+</body>
+
+</html>

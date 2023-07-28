@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* hjeader */
+
+.class1 {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 7% 75% 18%;
+    align-items: center;
+    height: 90px;
+}
+
+nav {
+    background: rgb(78, 79, 87);
+    position: sticky;
+    top: 0px;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 90%;
+    height: 75px;
+    margin-left: 10px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.cent {
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.1rem;
+    background-color: rgb(75, 68, 68);
+    color: white;
+    margin: -1px;
+}
+
+#id1 p {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 39px;
+    color: rgb(227, 96, 231);
+    margin: 11px 9px;
+    cursor: pointer;
+}
+
+.container{
+    height: 550px;
+    background: url("/static/blogs/main_img/tarik-haiga-BxELNNMN88Y-unsplash.jpg")no-repeat center center/ cover;
+    display: grid;
+    grid-template-columns: 7% 30% 25.5% 30%;
+    text-align: center;
+    padding: 30px 0px;
+    height: fit-content;
+}
+
+.card{
+    background: transparent;
+    margin-top: 20px;
+    padding: 15px;
+    cursor: pointer;
+    height: fit-content;
+    border: 1px solid darkgray;
+    width: fit-content;
+}
+
+.card-img{
+    margin-top: 3%;
+    width: 95%;
+    height: 220px;
+}
+
+.card-title{
+    font-size: 1.6rem;
+    color: rgb(32, 201, 178);
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.card-text{
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.blog_go{
+    color: rgb(26, 197, 11);
+    font-family: 'Baloo Bhai 2', cursive;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.blog_go:hover{
+    transition: all 0.6s ease-out;
+    color: rgb(23, 119, 22);
+    text-decoration: underline;
+}
+
+nav li{
+    list-style: none;
+    padding: 5px;
+    margin: 0px 10px;
+    border-radius: 4px;
+}
+#IL{
+    text-decoration: none;
+    text-align: center;
+    color: #ffff;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 2px solid rgb(78, 79, 87);
+}
+
+#IL:hover{
+    border-bottom: 1px solid rgb(36, 233, 177);
+    color: rgb(36, 233, 177);
+}
+
+#Head{
+    font-family: 'Baloo Bhai 2', cursive;
+    color: rgb(29, 73, 8);
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+
+.desc{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.07rem;
+}
+
+.Essay{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.07rem;
+    display: none;
+}
+
+.topics{
+    margin: 20px 250px;
+}
+
+.LMore{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.07rem;
+    color: rgb(36, 36, 196);
+    text-decoration: none;
+}
+
+.LMore:hover{
+    color: rgb(29, 29, 156);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.tech-ref{
+    text-decoration: none;
+    text-align: center;
+    color: #ffff;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.2rem;
+    padding: 7px;
+    margin: 10px 15px;
+    border: 1px solid rgb(78, 79, 87);
+}
+
+.tech-ref:hover{
+    border-bottom: 1px solid rgb(36, 233, 177);
+    color: rgb(36, 233, 177);
+}
+
+.tech-s-b{
+    color: rgb(36, 233, 177);
+    background: transparent;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1rem;
+    padding: 8px 15px;
+    margin: 5px 15px;
+    border: none;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    outline: none;
+}
+
+.tech-s-b:hover{
+    border-bottom: 3px solid black;
+}
+
+.tech-s-b:focus{
+    border-bottom: 3px solid black;
+}
+
+#ser-button{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1rem;
+    padding: 5px 10px;
+    background: rgb(22, 194, 22);
+    cursor: pointer;
+}
+#ser-button:hover{
+    background: rgb(11, 148, 11);
+}
+
+.topics img{
+    width: 100%; 
+    height: 400px;
+}
+
+
+/* music-plrer
+code payer */
+
+.music{
+    background: url("/static/blogs/main_img/headphone-3085681_1920.jpg")no-repeat center center/ cover ;
+    width: 100%;
+    height: 535px;
+    text-align: center;
+}
+
+.music img{
+    margin: 15px;
+    cursor: pointer;
+}
+
+.music img:hover{
+    opacity: 0.8;
+}
+
+.music-text{
+    font-family: 'Baloo Bhai 2', cursive;
+    padding: 20px;
+    padding-top: 70px;
+    font-size: 5rem;
+    color: #ffff;
+}
+
+/* end */
+
+.suggest{
+    background: url("/static/blogs/main_img/patrick-szylar-45bM3XGqnDE-unsplash.jpg")no-repeat center center/ cover ;
+    width: 100%;
+    height: 595px;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.suggest-text{
+    font-family: 'Baloo Bhai 2', cursive;
+    padding: 20px;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.suggest label{
+    color: rgb(255, 0, 0);
+    border-bottom: #ffffff;
+    font-size: 1.2rem;
+}
+
+.suggest input{
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 15px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 0.95rem;
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+.suggest input:hover{
+    border-bottom: 3px solid black;
+}
+
+.suggest input:focus{
+    border-bottom: 3px solid black;
+}
+
+.suggest textarea{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    outline: none;
+    margin: 15px;
+    padding: 20px;
+    font-size: 1rem;
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.suggest textarea:hover{
+    border-bottom: 3px solid black;
+}
+
+.suggest textarea:focus{
+    border-bottom: 3px solid black;
+}
+
+.suggest button{
+    padding: 10px 20px;
+    background: transparent;
+    margin: 10px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.suggest button:hover{
+    border-bottom: 3px solid black;
+    color: rgb(255, 255, 255);
+}
+
+.suggest button:focus{
+    border-bottom: 3px solid black;
+    color: rgb(255, 255, 255);
+}
+
+.cbox1-error {
+    display: grid;
+    grid-template-columns: 25% 45% 3% 27%;
+}
+
+.cbox1-warning {
+    display: grid;
+    grid-template-columns: 25% 45% 3% 27%;
+}
+
+.cbox1-success {
+    display: grid;
+    grid-template-columns: 25% 45% 3% 27%;
+}
+
+.cbox2-error {
+    padding: 10px;
+    padding-top: 19px;
+    cursor: pointer;
+}
+
+.cbox2-success {
+    padding: 10px;
+    padding-top: 19px;
+    cursor: pointer;
+}
+
+.cbox2-warning {
+    padding: 10px;
+    padding-top: 19px;
+    cursor: pointer;
+}
+
+.cross {
+    width: 15px;
+    height: 2px;
+    margin: -2px;
+    background-color: black;
+}
+
+#l1 {
+    transform: rotate(45deg);
+}
+
+#l2 {
+    transform: rotate(-45deg);
+}
+
+.burger {
+    position: absolute;
+    right: 10px;
+    top: 2rem;
+    display: none;
+    border: 1px solid rgb(153, 149, 149);
+    border-radius: 6px;
+}
+
+.burger:active {
+    border: 1px solid yellow;
+}
+
+.line {
+    width: 35px;
+    height: 3px;
+    margin: 5px;
+    background-color: white;
+    border: 1px solid rgb(110, 110, 231);
+    border-radius: 7px;
+}
+
+
+.sh{
+    display: block;
+}
+
+.resp{
+    display: none;
+}
+
+
+@media screen and (max-width: 1240px) {
+    .class1 {
+        align-items: center;
+        grid-template-columns: 21% 63% 16%;
+    }
+    #id1 .logo {
+        border-radius: 50%;
+        width: 77px;
+        margin-left: 5px;
+        height: 77px;
+    }
+    
+    #IL{
+        position: absolute;
+        font-size: 0.85rem;
+        width: 100%;
+        text-align: center;
+        right: 0;
+        background: rgb(78, 79, 87);
+        padding: 10px 0px;
+    }
+
+    nav {
+        background: rgb(78, 79, 87);
+        position: sticky;
+        top: 0;
+        height: 93px;
+    }
+    #id1 p {
+        font-size: 1.35rem;
+        margin: 9px 9px;
+        height: 67px;
+    }
+    .container{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    
+    .card{
+        background: transparent;
+        margin: 17px;
+        padding: 10px;
+        cursor: pointer;
+        height: fit-content;
+        border: 1px solid darkgray;
+    }
+    
+    .card-img{
+        width: 90%;
+        height: 165px;
+    }
+    
+    .card-title{
+        font-size: 1.6rem;
+        color: rgb(32, 201, 178);
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    .card-text{
+        font-size: 0.9rem;
+    }
+
+    .topics{
+        margin: 10px 10px;
+        padding: 10px 10px;
+    }
+
+    .topics img{
+        width: 100%; 
+        height: 300px;
+    }
+    .alert-success {
+        padding: 8px 4px;
+    }
+    .alert-error {
+        padding: 7px 4px;
+    }
+    .alert-warning {
+        padding: 7px 4px;
+    }
+    .cbox1-error {
+        display: grid;
+        grid-template-columns: 3% 82% 12% 3%;
+    }
+    .cbox1-warning {
+        display: grid;
+        grid-template-columns: 3% 82% 12% 3%;
+    }
+    .cbox1-success {
+        display: grid;
+        grid-template-columns: 3% 82% 12% 3%;
+    }
+
+
+/* reponsive */
+
+
+    .burger-resp {
+        display: block;
+    }
+
+    .sh{
+        display: none;
+    }
+
+    .resp{
+        display: block;
+    }
+
+    .main-blog{
+        display: grid;
+        grid-template-rows: 90% 10%;
+    }
+
+    .none{
+        display: none;
+    }
+
+    .blog-nav{
+        top: 91px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        background: rgb(78, 79, 87);
+        padding-bottom: 10px;
+    }   
+
+    .nav-blog{
+        display: none;
+    }
+    
+    .tech-ref{
+        margin: 10px 110px;
+    }
+
+    .tech-s-b{
+        margin: 5px 110px;
+    }
+
+    #ser-button{
+        margin: 5px 155px;
+    }
+
+    .container-height{
+        margin-top: 42px;
+    }
+
+    .tech-body{
+        margin-top: 0px;
+    }
+
+    .body-tech{
+        margin-top: 420px;
+    }
+}

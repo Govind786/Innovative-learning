@@ -1,0 +1,245 @@
+{% extends 'mainpage/temp.html' %} {% block title %} Home - Innovative Learning
+{% endblock %} {% block warning %} 
+<div class="class2" id="id2">
+  {% for message in messages %}
+  <div style="color: rgb(255, 255, 255); margin-top: 35px;" class="cbox1-{{ message.tags }}">
+    <div></div>
+    <h4 class="alert-{{ message.tags }}">{{ message }}</h4>
+    <div class="cbox2-{{ message.tags }}">
+      <div class="cross" id="l1"></div>
+      <div class="cross" id="l2"></div>
+    </div>
+    <div></div>
+  </div>
+  {% endfor %}
+  <h1 class="uwel">Hello {{ user }}</h1>
+  <h1 class="Welcome">Welcome To The</h1>
+  <h1 class="com">Innovative Learning</h1>
+</div>
+{% endblock %} {% block Quick %}
+<div class="Quicklinks">
+  <h2>Quick Links</h2>
+  <a href="/Innovative-Learning/courses">
+    <li class="Qli">Courses of Innovative Learning</li>
+  </a>
+  <a href="/Innovative-Learning/C-Tutorials">
+    <li class="Qli">C Tutorials</li>
+  </a>
+  <a href="/Innovative-Learning/Java-Tutorials">
+    <li class="Qli">Java Tutorials</li>
+  </a>
+  <a href="/Innovative-Learning/Python-Tutorials">
+    <li class="Qli">Python Tutorials</li>
+  </a>
+  <a href="/Innovative-Learning/D-S-Tutorials">
+    <li class="Qli">Data Structures Tutorials</li>
+  </a>
+</div>
+
+<div class="Practice">
+  <h2>Practice Programs</h2>
+  <a href="/Innovative-Learning/Conditional-Practice">
+    <li class="Qli">Practice Programs on Conditional Statements</li>
+  </a>
+  <a href="/Innovative-Learning/Loops-Practice">
+    <li class="Qli">Practice Programs on Loops (for, while, do-while)</li>
+  </a>
+  <a href="/Innovative-Learning/Array-Practice">
+    <li class="Qli">Practice Programs on Arrays</li>
+  </a>
+  <a href="/Innovative-Learning/Pointers-Practice">
+    <li class="Qli">Practice Programs on Pointers</li>
+  </a>
+  <a href="/Innovative-Learning/DS-Practice">
+    <li class="Qli">Practice Programs on Data Structures</li>
+  </a>
+</div>
+
+<div class="PracticeQuiz">
+  <h2>Quiz Questions for Practice</h2>
+  <a href="https://www.geeksforgeeks.org/output-c-programs-set-30-switch-case/" target="_blank">
+    <li class="Qli">Quiz on Conditional Statements</li>
+  </a>
+  <a href="https://www.geeksforgeeks.org/output-c-programs-set-35-loops/" target="_blank">
+    <li class="Qli">Quiz on Loops (for, while, do-while)</li>
+  </a>
+  <a href="https://www.geeksforgeeks.org/output-java-programs-set-47-arrays/" target="_blank">
+    <li class="Qli">Quiz on Arrays</li>
+  </a>
+  <a href="https://www.geeksforgeeks.org/output-c-programs-set-31-pointers/" target="_blank">
+    <li class="Qli">Quiz on Pointers</li>
+  </a>
+  <a href="https://www.geeksforgeeks.org/data-structure-gq/" target="_blank">
+    <li class="Qli">Quiz on Data Structures</li>
+  </a>
+</div>
+<form style="display: none;" action="." method="post" enctype="multipart/form-data">{% csrf_token %}
+  <div>
+    <input type="file" required name="DP" id="inp_img">
+    <button type="submit" id="upload">hfhg</button>
+  </div>
+</form>
+{% endblock %} {% block ja_sc %} {% load static %}
+<script src="{% static '/mainpage/innovative.js' %}"></script>
+<script>
+  if (!is_true && {{dp}}) {
+    var up_dp = document.getElementById('up_dp');
+    var upload = document.getElementById('upload');
+    var inp_img = document.getElementById('inp_img');
+
+    up_dp.addEventListener("click", () => {
+      inp_img.addEventListener('change', () => {
+        upload.click();
+      });
+      inp_img.click();
+    });
+  }
+  if (!is_true && !{{dp}}) {
+    var up_dp2 = document.getElementById('up_dp2');
+    var upload = document.getElementById('upload');
+    var inp_img = document.getElementById('inp_img');
+
+    up_dp2.addEventListener("click", () => {
+      inp_img.addEventListener('change', () => {
+        upload.click();
+      });
+      inp_img.click();
+    });
+  }
+  //Welcome Style design
+  var temple = document.getElementsByClassName('com');
+  var text1 = String(temple[0].innerHTML);
+
+  var temple1 = document.getElementsByClassName('uwel');
+  var text2 = String(temple1[0].innerHTML);
+  var w3 = (text2.length) * 220;
+
+  my_welcome();
+  my_welcome2();
+  my_welcome3();
+
+  {% for message in messages %}
+  cbox1 = document.querySelector('.cbox1-{{message.tags}}');
+  cut = document.querySelector('.cbox2-{{message.tags}}');
+  cut.addEventListener('click', () => {
+    cbox1.style.display = 'none';
+  })
+  var re_set = setInterval(myTimer, 250000);
+
+  function myTimer() {
+    cbox1.style.display = 'none';
+  }
+  {% endfor %}
+  function for_search(data_to_search) {
+    var flag = 0;
+    var index1 = document.getElementsByClassName('Qli');
+    var reset = index1;
+    var index2;
+    var index3;
+    var index;
+    for (var i = 0; i < index1.length; i++) {
+      index2 = index1[i].innerHTML;
+      index3 = String(index2);
+      index2 = index3.toLowerCase();
+      if (index2.includes(data_to_search.toLowerCase())) {
+        window.scrollTo(index1[i].offsetTop, index1[i].offsetTop - 250);
+        flag = 1;
+      }
+    }
+    if (flag == 0) {
+      alert("No Mathing for Searched item in this page.");
+      window.location.reload();
+      return;
+    }
+  }
+  //#id1 button
+  document.getElementById('sear').addEventListener('click', () => {
+    var data_to_search = document.getElementById("isear").value;
+    document.getElementById("isear").value = "";
+    if (data_to_search.length <= 2) {
+      alert("Too short Argument to search for");
+      window.location.reload();
+    }
+    else {
+      for_search(data_to_search);
+    }
+    burger.click();
+  });
+
+
+  function G_F(e) {
+    var key;
+    if (window.event) {
+      key = e.keyCode;
+    }
+    if (key == 13) {
+      burger.click();
+      var data_to_search = document.getElementById("isear").value;
+      if (data_to_search.length <= 2) {
+        alert("Too short Argument to search for");
+        window.location.reload();
+      }
+      else {
+        document.getElementById("isear").value = "";
+        for_search(data_to_search);
+      }
+    }
+  }
+  function my_welcome() {
+    var templ = document.getElementsByClassName('Welcome');
+    var text = String(templ[0].innerHTML);
+    templ[0].innerHTML = "W";
+    temple[0].innerHTML = "I";
+    var temp = "W";
+    for (var i = 1; i < text.length; i++) {
+      task(i);
+    }
+    function task(i) {
+      setTimeout(function () {
+        templ[0].innerHTML = temp + text[i];
+        temp = temp + text[i];
+      }, 200 * i);
+    }
+  }
+  function my_welcome2() {
+    var temp = "I";
+    for (var i = 1; i < text1.length; i++) {
+      task(i);
+    }
+    function task(i) {
+      setTimeout(function () {
+        temple[0].innerHTML = temp + text1[i];
+        temp = temp + text1[i];
+      }, 200 * i);
+    }
+  }
+
+  function my_welcome3() {
+    var temp = "H";
+    for (var i = 1; i < text2.length; i++) {
+      task(i);
+    }
+    function task(i) {
+      setTimeout(function () {
+        temple1[0].innerHTML = temp + text2[i];
+        temp = temp + text2[i];
+      }, 200 * i);
+    }
+  }
+
+  var timer = setInterval(my_welcome, 4200); // call every 4200 milliseconds
+  var timer = setInterval(my_welcome2, 4200); // call every 4200 milliseconds
+  var timer = setInterval(my_welcome3, w3); // call every 4200 milliseconds
+  // clearTimeout(timer);
+  // clearTimeout(timer2);
+</script>
+{% endblock %}
+<!-- 
+function sleep (time) {
+    return new Promise((resolve) => setTimeout(resolve, 2000));
+  }
+  
+  // Usage!
+  sleep(500).then(() => {
+      my_welcome2();
+  }); -->

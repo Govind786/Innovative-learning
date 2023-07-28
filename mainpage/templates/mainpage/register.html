@@ -1,0 +1,120 @@
+{% extends 'mainpage/temp.html' %}
+{% block title %} Register - Innovative Learning {% endblock %}
+
+{% block register %}
+<div class="dummy" id="id41">
+    <h1 class="log">Register Now</h1>
+    {% for message in messages %}
+    <div class="cbox1-{{ message.tags }}">
+        <div></div>
+        <h4 style="color: white;" class="alert-{{ message.tags }}">{{ message }}</h4>
+        <div class="cbox2-{{ message.tags }}">
+            <div class="cross" id="l1"></div>
+            <div class="cross" id="l2"></div>
+        </div>
+        <div></div>
+    </div>
+    {% endfor %}
+    <div id="contactus">
+        <form action="/register/" method="POST">{% csrf_token %}
+            <div class="formgroup2">
+                <label for="Name">Name</label>
+                <input type="text" name="Name" placeholder="Enter Your Name" id="Name">
+                <label for="gmail">E-mail</label>
+                <input type="text" name="email" placeholder="Enter Your E-mail" id="gmail">
+                <label for="password">Password</label>
+                <input type="password" name="pass1" placeholder="Make Your Password" id="password">
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" name="pass" placeholder="Confirm Your Password" id="cpassword">
+                <button class="btn">Register now</button>
+                <a href="/login" id="in1">Already Registered?</a>
+                <a href="/login" id="in22">Login Now</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+{% block ja_sc %}
+{% load static %}
+<script src="{% static '/mainpage/innovative.js' %}"></script>
+<script>
+    if (!is_true && {{dp}}) {
+        var up_dp = document.getElementById('up_dp');
+        up_dp.addEventListener("click", () => {
+            window.location = "/";
+        });
+    }
+    {% for message in messages %}
+    cbox1 = document.querySelector('.cbox1-{{message.tags}}');
+    cut = document.querySelector('.cbox2-{{message.tags}}');
+    cut.addEventListener('click', () => {
+        cbox1.style.display = 'none';
+    })
+
+    var re_set = setInterval(myTimer, 2500);
+
+    function myTimer() {
+        cbox1.style.display = 'none';
+    }
+    {% endfor %}
+
+    function for_search(data_to_search) {
+        var flag = 0;
+        if(data_to_search == 'email' || data_to_search == 'Email'){
+             data_to_search == 'e-mail';
+        }
+        var index1 = document.getElementsByTagName('label');
+        console.log(index1);
+        var reset = index1;
+        var index2;
+        var index3;
+        var index;
+        for (var i = 0; i < index1.length; i++) {
+            index2 = index1[i].innerHTML;
+            index3 = String(index2);
+            index2 = index3.toLowerCase();
+            if (index2.includes(data_to_search.toLowerCase())) {
+                window.scrollTo(index1[i].offsetTop, index1[i].offsetTop - 250);
+                flag = 1;
+            }
+        }
+        if (flag == 0) {
+            alert("No Mathing for Searched item in this page.");
+            return;
+        }
+    }
+    //#id1 button
+    document.getElementById('sear').addEventListener('click', () => {
+        var data_to_search = document.getElementById("isear").value;
+        document.getElementById("isear").value = "";
+        if (data_to_search.length <= 2) {
+            alert("Too short Argument to search for");
+        }
+        else {
+            for_search(data_to_search);
+        }
+        burger.click();
+    })
+
+
+    function G_F(e) {
+        var key;
+        if (window.event) {
+            key = e.keyCode;
+        }
+        if (key == 13) {
+            burger.click();
+            var data_to_search = document.getElementById("isear").value;
+            if (data_to_search.length <= 2) {
+                alert("Too short Argument to search for");
+            }
+            else {
+                document.getElementById("isear").value = "";
+                for_search(data_to_search);
+            }
+        }
+    }
+
+</script>
+{% endblock %}

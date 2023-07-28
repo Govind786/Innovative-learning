@@ -1,0 +1,185 @@
+{% extends 'mainpage/temp.html' %}
+{% block title %} Courses - Innovative Learning {% endblock %}
+
+{% block courses %}
+<div class="class3" id="id3">
+    <h1 class="co" id="3">Our Courses</h1>
+    {% for message in messages %}
+    <div class="cbox1-{{ message.tags }}">
+        <div></div>
+        <h4 class="alert-{{ message.tags }}">{{ message }}</h4>
+        <div class="cbox2-{{ message.tags }}">
+            <div class="cross" id="l1"></div>
+            <div class="cross" id="l2"></div>
+        </div>
+        <div></div>
+    </div>
+    {% endfor %}
+    <section id="cours">
+        <div class="box" id="cc">
+            <div class="desc">
+                <h2 style="color: rgb(35, 119, 35);">C++</h2>
+                <p>C++ is a very popular language for performance-critical applications that rely on speed and efficient
+                    memory management. It’s used in a wide range of industries including software and game development,
+                    VR, robotics, and scientific computing. </p>
+                    <span style="text-decoration: line-through; color: red;" class="payment">Price:- 1200</span>
+                    <a style="color: rgb(201, 18, 192);" class="payment" href="/payments">Free Demo</a>
+            </div>
+            <div></div>
+            <div>
+                <a href="https://en.wikipedia.org/wiki/C++_(programming_language)" target="_blank"><img
+                        src="/static/mainpage/Courses_page/django_1.jpg" alt="/payments"></a>
+            </div>
+        </div>
+        <div class="box" id="java">
+
+            <div class="desc">
+                <h2 style="color: rgb(35, 119, 35);">Java</h2>
+                <p>Java is one of the most popular programming languages out there. Released in 1995 and still widely
+                    used today, Java has many applications, including software development, mobile applications, and
+                    large systems development. Knowing Java opens a lot of possibilities for you as a developer.</p>
+                    <span style="text-decoration: line-through; color: red;" class="payment">Price:- 1200</span>
+                    <a style="color: rgb(201, 18, 192);" class="payment" href="/payments">Free Demo</a>
+            </div>
+            <div></div>
+            <div>
+                <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank"> <img
+                        src="/static/mainpage/Courses_page/joan-gamell-ZS67i1HLllo-unsplash.jpg" alt=""
+                        style="margin-top: 15px;"></a>
+            </div>
+        </div>
+        <div class="box" id="python">
+
+            <div class="desc">
+                <h2 style="color: rgb(35, 119, 35);">Python</h2>
+                <p>Python is a general-purpose, versatile, and powerful programming language. It’s a great first
+                    language because it’s concise and easy to read. Whatever you want to do, Python can do it. From web
+                    development to machine learning to data science, Python is the language for you.</p>
+                    <span style="text-decoration: line-through; color: red;" class="payment">Price:- 1200</span>
+                    <a style="color: rgb(201, 18, 192);" class="payment" href="/payments">Free Demo</a>
+            </div>
+            <div></div>
+            <div>
+                <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank"><img
+                        src="/static/mainpage/Courses_page/alex-chumak-zGuBURGGmdY-unsplash.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="box" id="ruby">
+
+            <div class="desc">
+                <h2 style="color: rgb(35, 119, 35);">JavaScript</h2>
+                <p>JavaScript is a fun and flexible programming language. It’s one of the core technologies of web
+                    development and can be used on both the front-end and the back-end.</p>
+                <span style="text-decoration: line-through; color: red;" class="payment">Price:- 1200</span>
+                <a style="color: rgb(201, 18, 192);" class="payment" href="/payments">Free Demo</a>
+            </div>
+            <div></div>
+            <div>
+                <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">
+                    <img style="margin-top: -11px;" src="/static/mainpage/Courses_page/claudio-schwarz-i25aqE_YUZs-unsplash.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="box" id="MySQL">
+
+            <div class="desc">
+                <h2 style="color: rgb(35, 119, 35);">MySQL</h2>
+                <p>SQL is the standard relational data management language. We live in a data-driven world, and there
+                    are many businesses that store their information inside large, relational databases. This makes SQL
+                    a great skill not only for data scientists and engineers, but for anyone wanting to be
+                    data-literate.</p>
+                    <span style="text-decoration: line-through; color: red;" class="payment">Price:- 1200</span>
+                    <a style="color: rgb(201, 18, 192);" class="payment" href="/payments">Free Demo</a>
+            </div>
+            <div></div>
+            <div>
+                <a href="https://en.wikipedia.org/wiki/MySQL" target="_blank">
+                    <img src="/static/mainpage/Courses_page/kelvin-ang-QvU0LNnr26U-unsplash.jpg" alt=""
+                        style="margin-top: 15px;"></a>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block ja_sc %}
+{% load static %}
+<script src="{% static '/mainpage/innovative.js' %}"></script>
+<script>
+    if (!is_true && {{dp}}) {
+        var up_dp = document.getElementById('up_dp');
+        up_dp.addEventListener("click", () => {
+            window.location = "/";
+        });
+    }
+    {% for message in messages %}
+    cbox1 = document.querySelector('.cbox1-{{message.tags}}');
+    cut = document.querySelector('.cbox2-{{message.tags}}');
+    cut.addEventListener('click', () => {
+        cbox1.style.display = 'none';
+    })
+
+    var re_set = setInterval(myTimer, 2500);
+
+    function myTimer() {
+        cbox1.style.display = 'none';
+    }
+    {% endfor %}
+
+    function for_search(data_to_search) {
+        if (data_to_search == 'email' || data_to_search == 'Email') {
+            data_to_search == 'e-mail';
+        }
+        var flag = 0;
+        var index1 = document.getElementsByTagName('p');
+        var reset = index1;
+        var index2;
+        var index3;
+        var index;
+        for (var i = 0; i < index1.length; i++) {
+            index2 = index1[i].innerHTML;
+            index3 = String(index2);
+            index2 = index3.toLowerCase();
+            if (index2.includes(data_to_search.toLowerCase())) {
+                window.scrollTo(index1[i].offsetTop, index1[i].offsetTop - 250);
+                flag = 1;
+            }
+        }
+        if (flag == 0) {
+            alert("No Mathing for Searched item in this page.");
+            return;
+        }
+    }
+    //#id1 button
+    document.getElementById('sear').addEventListener('click', () => {
+        var data_to_search = document.getElementById("isear").value;
+        document.getElementById("isear").value = "";
+        if (data_to_search.length <= 2) {
+            alert("Too short Argument to search for");
+        }
+        else {
+            for_search(data_to_search);
+        }
+        burger.click();
+    })
+
+
+    function G_F(e) {
+        var key;
+        if (window.event) {
+            key = e.keyCode;
+        }
+        if (key == 13) {
+            burger.click();
+            var data_to_search = document.getElementById("isear").value;
+            if (data_to_search.length <= 2) {
+                alert("Too short Argument to search for");
+            }
+            else {
+                document.getElementById("isear").value = "";
+                for_search(data_to_search);
+            }
+        }
+    }
+
+</script>
+{% endblock %}

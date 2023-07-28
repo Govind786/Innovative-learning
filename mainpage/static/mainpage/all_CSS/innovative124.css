@@ -1,0 +1,914 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* hjeader */
+
+.class1 {
+    text-align: center;
+    display: flex;
+    max-height: 90px;
+}
+
+.class1 a {
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+    margin: 20px 10px;
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-decoration: none;
+}
+
+.class1 a:hover {
+    color: rgb(146, 226, 209);
+    transition: all 0.5s ease-out;
+}
+
+#q{
+    border: 1px solid rgb(87, 78, 78);
+}
+
+#a{
+    border: 1px solid rgb(87, 78, 78);
+}
+#c{
+    border: 1px solid rgb(87, 78, 78);
+}
+.blog{
+    border: 1px solid rgb(87, 78, 78);
+}
+#q:hover{
+    border-bottom: 1px solid rgb(36, 233, 177);
+}
+
+#a:hover{
+    border-bottom: 1px solid rgb(36, 233, 177);
+}
+#c:hover{
+    border-bottom: 1px solid rgb(36, 233, 177);
+}
+.blog:hover{
+    border-bottom: 1px solid rgb(36, 233, 177);
+}
+#id1 button {
+    cursor: pointer;
+    padding: 7px 13px;
+    margin: 3px;
+    font-family: 'Baloo Bhai 2', cursive;
+    background-color: rgb(14, 199, 29);
+}
+
+#id1 button:hover {
+    background-color: rgb(45, 163, 9);
+    transition: all 0.5s ease-out;
+}
+
+nav {
+    background: rgb(87, 78, 78);
+    position: sticky;
+    top: 0px;
+}
+
+.navigation {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.logo {
+    border-radius: 100%;
+    width: 6%;
+    margin: 6px;
+    margin-left: 10px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    opacity: 0.9;
+    transition: all 0.5s ease-out;
+}
+
+.nav {
+    list-style: none;
+    padding: 8px;
+    margin: 10px;
+}
+
+.burger {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    display: none;
+    border: 1px solid rgb(153, 149, 149);
+    border-radius: 6px;
+}
+
+.burger:active {
+    border: 1px solid yellow;
+}
+
+.line {
+    width: 35px;
+    height: 3px;
+    margin: 5px;
+    background-color: white;
+    border: 1px solid rgb(110, 110, 231);
+    border-radius: 7px;
+}
+
+#id2 {
+    background: url("/static/mainpage/mainpages_img/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg") no-repeat center center/ cover;
+    height: 600px;
+}
+
+/* welcome */
+
+.class2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.com {
+    font-size: 3rem;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    margin-bottom: 140px;
+    text-shadow: -3px -2px blue;
+}
+
+.Welcome {
+    font-size: 3rem;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 10px;
+    margin-top: 190px;
+    text-shadow: -3px -2px blue;
+}
+
+.uwel{
+    display: none;
+    font-size: 3rem;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 10px;
+    margin-top: 40px;
+    text-shadow: -3px -2px blue;
+}
+.co {
+    text-align: center;
+    font-size: 3rem;
+    color: blue;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#cours {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Quicklinks a {
+    font-size: 2rem;
+    color: rgb(194, 18, 18);
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 15px;
+    margin-left: 10%;
+    margin-right: 40%;
+    text-decoration: none;
+    list-style: none;
+}
+
+#cours .box {
+    text-align: center;
+    background: rgb(248, 246, 246);
+}
+
+.box img {
+    border: 2px solid grey;
+    margin: auto;
+    display: block;
+    width: 83%;
+    height: 225px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.box h2 {
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 5px;
+    font-size: 2rem;
+}
+
+.box p {
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 5px;
+    font-size: 1.2rem;
+}
+
+.payment{
+    font-family: 'Baloo Bhai 2', cursive; 
+    font-size: 1.5rem;
+    text-decoration: wavy;
+}
+
+/* register */
+
+.log {
+    text-align: center;
+    font-size: 3rem;
+    color: blue;
+    font-family: 'Baloo Bhai 2', cursive;
+    padding-top: 30px;
+}
+
+.formgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 50px;
+}
+
+.formgroup2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 50px;
+}
+
+.formgroup label {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.formgroup2 label {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* alerts starts */
+
+.cbox1-error {
+    display: grid;
+    grid-template-columns: 25% 45% 3% 27%;
+}
+
+.cbox1-warning {
+    display: grid;
+    grid-template-columns: 25% 45% 3% 27%;
+}
+
+.cbox1-success {
+    display: grid;
+    grid-template-columns: 25% 45% 3% 27%;
+}
+
+.cbox2-error {
+    padding: 10px;
+    padding-top: 19px;
+    cursor: pointer;
+}
+
+.cbox2-success {
+    padding: 10px;
+    padding-top: 19px;
+    cursor: pointer;
+}
+
+.cbox2-warning {
+    padding: 10px;
+    padding-top: 19px;
+    cursor: pointer;
+}
+
+.cross {
+    width: 15px;
+    height: 2px;
+    margin: -2px;
+    background-color: rgb(255, 255, 255);
+}
+
+#l1 {
+    transform: rotate(45deg);
+}
+
+#l2 {
+    transform: rotate(-45deg);
+}
+
+#id4 input {
+    color: rgb(4, 255, 37);
+    background: transparent;
+    margin: 15px 70px;
+    padding: 13px 50px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#id4 input:hover {
+    border-bottom: 3px solid rgb(14, 13, 13);
+}
+#id4 input:focus {
+    border-bottom: 3px solid rgb(14, 13, 13);
+}
+
+#id4 label{
+    color: rgb(245, 241, 21);
+}
+
+#id41 input {
+    color: rgb(4, 255, 37);
+    background: transparent;
+    margin: 15px 70px;
+    padding: 13px 50px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#id41 label{
+    color: red;
+}
+
+::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+#id41 input:hover {
+    border-bottom: 3px solid rgb(14, 13, 13);
+}
+#id41 input:focus {
+    border-bottom: 3px solid rgb(14, 13, 13);
+}
+
+#a4:hover {
+    background: rgb(255, 0, 0);
+    transition: all 0.4s ease-out;
+}
+
+#a41:hover {
+    background: rgb(255, 0, 0);
+    transition: all 0.4s ease-out;
+}
+
+#a42:hover {
+    background: rgb(255, 0, 0);
+    transition: all 0.4s ease-out;
+}
+
+#id4 {
+    background: url("/static/mainpage/mainpages_img/desola-lanre-ologun-zYgV-NGZtlA-unsplash.jpg")no-repeat center center / cover;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#id41 {
+    background: url("/static/mainpage/mainpages_img/blake-wisz-Xn5FbEM9564-unsplash.jpg")no-repeat center center / cover;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.formgroup2 p {
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.btn {
+    color: white;
+    cursor: pointer;
+    padding: 5px 50px;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    background: transparent;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.btn:hover {
+    color: black;
+    transition: all 0.5s ease-out;
+    background-color: white;
+    color: black;
+    opacity: 0.7;
+    transition: all 0.5s ease-out;
+}
+
+.formgroup a {
+    text-decoration: none;
+    color: rgb(0, 255, 255);
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.formgroup2 a {
+    text-decoration: none;
+    color: rgb(0, 255, 255);
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.search-nav {
+    background: transparent;
+    color: rgb(15, 177, 177);
+    margin: 3px 6px;
+    font-size: 1rem;
+    margin-left: 170px;
+    font-family: 'Baloo Bhai 2', cursive;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.search-nav:hover{
+    border-bottom: 3px solid black;
+}
+
+.search-nav:focus{
+    border-bottom: 3px solid black;
+}
+
+.formgroup a:hover {
+    opacity: 0.7;
+    transition: all 0.5s ease-out;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.formgroup2 a:hover {
+    transition: all 0.5s ease-out;
+    text-decoration: none;
+    color: rgb(243, 243, 243);
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.contactgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 50px;
+    margin-right: 60%;
+}
+
+.contactus {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.last {
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(249, 249, 250);
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.class5{
+    background: url("/static/mainpage/mainpages_img/pawel-czerwinski--0xCCPIbl3M-unsplash.jpg") no-repeat center center/ cover;
+}
+
+.class5 input {
+    color: rgb(4, 255, 37);
+    background: transparent;
+    margin: 15px 70px;
+    padding: 13px 50px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.class5 input:hover {
+    border-bottom: 3px solid rgb(14, 13, 13);
+}
+.class5 input:focus {
+    border-bottom: 3px solid rgb(14, 13, 13);
+}
+
+.class5 label{
+    color: brown;
+}
+
+.class5 textarea {
+    color: rgb(4, 255, 37);
+    background: transparent;
+    margin: 15px 100px;
+    padding: 13px 25px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.class5 textarea:hover {
+    border-bottom: 3px solid rgb(14, 13, 13);
+}
+.class5 textarea:focus {
+    border-bottom: 3px solid rgb(14, 13, 13);
+}
+
+.class5 .btn {
+    padding: 5px 50px;
+    font-size: 1.2rem;
+    margin-top: 5px;
+    background: transparent;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.class5 .btn:hover {
+    opacity: 0.7;
+    transition: all 0.5s ease-out;
+    background-color: rgb(255, 11, 11);
+    color: black;
+    /* text-shadow: 1px 1px blue; */
+}
+
+.contactgroup label {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.cent {
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.1rem;
+    background-color: rgb(75, 68, 68);
+    color: white;
+    margin: -1px;
+}
+
+.whatsapp {
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.1rem;
+}
+
+.class4 {
+    display: block;
+}
+
+.Quicklinks {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    color: rgb(46, 107, 31);
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 20px;
+}
+
+.Quicklinks h2 {
+    font-size: 48px;
+    margin: 15px;
+}
+
+.Practice {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    color: rgb(46, 107, 31);
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 20px;
+}
+
+.Practice a {
+    font-size: 2rem;
+    color: rgb(27, 7, 117);
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 15px;
+    margin-left: 5%;
+    margin-right: 40%;
+    text-decoration: none;
+    list-style: none;
+}
+
+.Quicklinks a:hover {
+    color: rgb(201, 46, 175);
+    transition: all 0.6s ease-out;
+    text-shadow: -2px -1px rgb(2, 2, 2);
+}
+
+.PracticeQuiz {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    color: rgb(46, 107, 31);
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 20px;
+}
+
+.Practice h2 {
+    font-size: 48px;
+    margin: 15px;
+}
+
+.PracticeQuiz h2 {
+    font-size: 48px;
+    margin: 15px;
+}
+
+.Practice a:hover {
+    color: rgb(66, 209, 209);
+    transition: all 0.6s ease-out;
+    text-shadow: -2px -1px rgb(2, 2, 2);
+}
+
+.PracticeQuiz a {
+    font-size: 2rem;
+    color: rgb(122, 19, 122);
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 15px;
+    margin-left: 5%;
+    margin-right: 50%;
+    text-decoration: none;
+    list-style: none;
+}
+
+.PracticeQuiz a:hover {
+    color: blue;
+    transition: all 0.6s ease-out;
+    text-shadow: -2px -1px rgb(2, 2, 2);
+}
+
+#a4 {
+    list-style: none;
+    padding: 2px;
+    margin: 4px;
+    background: blue;
+    border: 1.3px solid white;
+}
+
+#a41 {
+    list-style: none;
+    padding: 2px;
+    margin: 4px;
+    background: blue;
+    border: 1.3px solid white;
+}
+
+@media screen and (max-width: 1240px) {
+    #id1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-height: none;
+    }
+    .show {
+        font-size: 2.2rem;
+    }
+    .show2 {
+        font-size: 2.2rem;
+    }
+    .show3 {
+        font-size: 2.2rem;
+    }
+    #id1 .logo {
+        border-radius: 50%;
+        width: 72px;
+        height: 67px;
+    }
+    #id1 .navigation {
+        cursor: pointer;
+        width: 100%;
+        background: rgb(87, 78, 78);
+        flex-direction: column;
+        height: 410px;
+        transition: all 0.4s ease-out;
+        margin-top: -7px;
+    }
+    .burger-resp {
+        display: block;
+    }
+    #id1 input {
+        margin-left: 0px;
+    }
+    #id1 a {
+        cursor: pointer;
+        color: white;
+        padding: 5px;
+        margin: 8px;
+        font-size: 1.2rem;
+        font-family: 'Baloo Bhai 2', cursive;
+        text-decoration: none;
+    }
+    #id1 .nav {
+        margin: 5px;
+        padding: 4px;
+        font-size: 1rem;
+    }
+    #id2 .Welcome {
+        font-size: 2rem;
+    }
+
+    #id2 .uwel{
+        font-size: 2rem;
+    }
+    #id2 .com {
+        font-size: 2rem;
+        margin-bottom: 21px;
+    }
+    #id2::before {
+        width: 100%;
+        height: 27%;
+    }
+    nav {
+        background: rgb(87, 78, 78);
+        position: sticky;
+        top: 0;
+        height: 75px;
+    }
+    #cours {
+        display: flex;
+        flex-direction: column;
+    }
+    #contactus .formgroup label {
+        font-size: 1rem;
+    }
+    #id5 input {
+        margin: 3px 2px;
+        padding: 10px 25px;
+        font-size: 0.8rem;
+    }
+    .alert-success {
+        padding: 7px 4px;
+    }
+    .alert-error {
+        padding: 7px 4px;
+    }
+    .alert-warning {
+        padding: 7px 4px;
+    }
+    .cbox1-error {
+        display: grid;
+        grid-template-columns: 3% 82% 12% 3%;
+    }
+    .cbox1-warning {
+        display: grid;
+        grid-template-columns: 3% 82% 12% 3%;
+    }
+    .cbox1-success {
+        display: grid;
+        grid-template-columns: 3% 82% 12% 3%;
+    }
+    #id41 input {
+        margin: 3px 20px;
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+    #id4 input {
+        margin: 3px 20px;
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+    #id55 .btn {
+        padding: 5px 30px;
+        font-size: 1rem;
+        margin-top: 5px;
+        background-color: rgb(250, 62, 62);
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    #id5 textarea {
+        font-size: 1rem;
+        padding: 15px;
+    }
+    #id1 .navmedia {
+        height: 0;
+        transition: all 0.5s ease-out;
+    }
+    #id1 .none {
+        display: none;
+    }
+    .contactgroup {
+        margin-right: 0;
+    }
+    #id1 #sear {
+        margin-top: 2px;
+        margin-top: 11px;
+        height: 40px;
+        width: 80px;
+    }
+    .Quicklinks a {
+        font-size: 1.8rem;
+        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .Quicklinks h2 {
+        font-size: 48px;
+        margin: 0;
+    }
+    .Practice h2 {
+        font-size: 48px;
+        margin: 0px;
+    }
+    .PracticeQuiz h2 {
+        font-size: 48px;
+        margin: 0px;
+    }
+    .Practice a {
+        font-size: 1.8rem;
+        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .PracticeQuiz a {
+        font-size: 1.8rem;
+        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .box {
+        display: grid;
+        grid-template-rows: 50% 10% 48%;
+        margin: 20px;
+        border: 3px solid rgb(168, 162, 162);
+        width: 80%;
+        padding: 60px;
+    }
+    .box img {
+        border: 2px solid grey;
+        margin: -7px;
+        margin-top: 5px;
+        display: block;
+        width: 98%;
+        height: 260px;
+        border-radius: 15px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #isear {
+        font-size: 1.3rem;
+        padding-left: 20px;
+        outline: none;
+    }
+
+    .box p {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: -25px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
+
+    .box{
+        width: 65%;
+    }
+
+    #id2 {
+        height: 450px;
+    }
+
+    .Welcome{
+        margin-top: 150px;
+    }
+}
+
+@media screen and (min-width: 1241px) {
+    .box {
+        display: grid;
+        grid-template-columns: 45% 10% 45%;
+        margin: 20px;
+        border: 3px solid rgb(168, 162, 162);
+        width: 80%;
+        padding: 60px;
+    }
+}

@@ -1,0 +1,93 @@
+{% extends '../temp.html' %}
+{% block title %} C-Tutorial - Innovative Learning {% endblock %}
+{% block warning %}
+{% for message in messages %}
+<div class="cbox1-{{ message.tags }}">
+    <h4 class="alert-{{ message.tags }}">{{ message }}</h4>
+    <div class="cbox2-{{ message.tags }}">
+        <div class="cross" id="l1"></div>
+        <div class="cross" id="l2"></div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
+
+{% block Loops %}
+<div id='My-code'
+    style="color: rgb(196, 13, 13); text-align: center; font-size: 2rem;font-family: 'Baloo Bhai 2', cursive; padding-top: 20px;text-shadow: -2px -1px rgb(63, 63, 66);">
+    Practice Programs on Array Statements</div>
+<li id="solution" style="display: none; font-family: 'Baloo Bhai 2', cursive; font-size: 1.5rem; margin-left: 20px;">
+</li> <br><br>
+<ul class="questions">
+    <li id='Array-1'> C Program to Calculate Sum & Average of an Array </li>
+    <li id='Array-2'> C Program to Calculate the Sum of the Array Elements using Pointer </li>
+    <li id='Array-3'> C Program to Calculate Sum of all Elements of an Array using Pointers as Arguments </li>
+    <li id='Array-4'> C Program to Compute the Sum of two One-Dimensional Arrays using Malloc </li>
+    <li id='Array-5'> C Program to Find the Sum of Contiguous Subarray within a 1 – D Array of Numbers which has the Largest Sum </li>
+    <li id='Array-6'> C Program to Find the Largest Two Numbers in a given Array </li>
+    <li id='Array-7'> C Program to Find the Second Largest & Smallest Elements in an Array </li>
+    <li id='Array-8'> C Program to Find the Largest Number in an Array </li>
+    <li id='Array-9'> C Program to Put Even & Odd Elements of an Array in 2 Separate Arrays </li>
+    <li id='Array-10'> C Program to Insert an Element in a Specified Position in a given Array </li>
+    <li id='Array-11'> C Program to Delete the Specified Integer from an Array </li>
+    <li id='Array-12'> C Program to Cyclically Permute the Elements of an Array </li>
+    <li id='Array-13'> C Program to Sort the Array in an Ascending Order </li>
+    <li id='Array-14'> C Program to Sort the Array in Descending Order </li>
+    <li id='Array-15'> C Program to Sort Names in an Alphabetical Order </li>
+    <li id='Array-16'> C Program to Merge and Sort Elements of 2 different Arrays </li>
+    <li id='Array-17'> C Program to Merge the Elements of 2 Sorted Array </li>
+    <li id='Array-18'> C Program to Sort N Numbers in Ascending Order using Bubble Sort </li>
+    <li id='Array-19'> C Program to Split an Array from Specified Position & Add First Part to the End </li>
+    <li id='Array-20'> C Program to Accept an Array & Swap Elements using Pointers </li>
+    <li id='Array-21'> C Program to Read an Array and Search for an Element </li>
+    <li id='Array-22'> C Program to accept Sorted Array and do Search using Binary Search </li>
+    <li id='Array-23'> C Program to find the Biggest Number in an Array of Numbers using Recursion </li>
+    <li id='Array-24'> C Program to Print the Number of Odd & Even Numbers in an Array </li>
+    <li id='Array-25'> C Program to Print All the Repeated Numbers with Frequency in an Array </li>
+    <li id='Array-26'> C Program to Print the kth Element in the Array </li>
+    <li id='Array-27'> C Program to Find the Number of Elements in an Array </li>
+    <li id='Array-28'> C Program to Check Array bounds while Inputing Elements into the Array </li>
+    <li id='Array-29'> C Program to Print the Alternate Elements in an Array </li>
+    <li id='Array-30'> C Program to Find the Odd Element given an Array with only two Different Element </li>
+    <li id='Array-31'> C Program to Increment Every Element of the Array by One & Print Incremented Array </li>
+    <li id='Array-32'> C Program to Find the Number of Non Repeated Elements in an Array </li>
+    <li id='Array-33'> C Program to identify missing Numbers in a given Array </li>
+    <li id='Array-34'> C Program to Segregate 0s on Left Side & 1s on right side of the Array </li>
+    <li id='Array-35'> C Program to Find 2 Elements in the Array such that Difference between them is Largest </li>
+    <li id='Array-36'> C Program to Input a String & Store their Ascii Values in an Integer Array & Print the Array </li>
+    <li id='Array-37'> C Program to Input an Array, Store the Squares of these Elements in an Array & Print it </li>
+    <li id='Array-38'> C Program to Find the two Elements such that their Sum is Closest to Zero </li>
+    <li id='Array-39'> C Program to Find if a given Integer X appears more than N/2 times in a Sorted Array of N Integers </li>
+    <li id='Array-40'> C Program to Find the Median of the Elements after Merging these 2 Sorted Arrays with Same Size </li>
+    <li id='Array-41'> C Program to Find Union & Intersection of 2 Arrays </li>
+    <li id='Array-42'> C Program to Find Ceiling & Floor of X given a Sorted Array & a value X </li>
+    <li id='Array-43'> C Program to Find the Summation of Node values at Row or Level </li>
+    <br><br>
+</ul>
+<div class="codingKiya">
+    <pre style="display: none; margin-bottom: 40px; margin-left: 40px;"></pre>
+    <pre style="display: none; margin-bottom: 40px; margin-left: 40px;"></pre>
+</div>
+
+<div class="codingKiya2" style="display: none;">
+    <div style="text-align: center;">
+        <img class="previous" style="cursor: pointer;" src="https://img.icons8.com/flat-round/64/000000/circled-left-2--v1.png">
+        <p class="previous info" style="color: rgb(31, 126, 94); cursor: pointer;">&nbsp;&nbsp;Back</p>
+    </div>
+    <div style="text-align: center;">
+        <img style="cursor: pointer;" class="home" src="https://img.icons8.com/glyph-neue/64/26e07f/home.png"/>
+        <p style="cursor: pointer; color: rgb(108, 247, 142);" class="home info">&nbsp;&nbsp;Back to Questions</p>
+    </div>
+    <div style="text-align: center;">
+        <img class="next" style="cursor: pointer;" src="https://img.icons8.com/flat-round/64/000000/circled-right-2--v1.png">
+        <p class="next info" style="color: rgb(31, 126, 94); cursor: pointer;">&nbsp;&nbsp;Next</p>
+    </div>
+</div>
+
+
+{% endblock%}
+
+{% block ja_sc %} {% load static %}
+<script src="{% static '/mainpage/innovative1.js' %}"></script>
+<script src="{% static '/mainpage/Programs_javascripts/Array.js' %}"></script>
+{% endblock %}

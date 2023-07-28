@@ -1,0 +1,101 @@
+{% extends '../temp.html' %}
+{% block title %} C-Tutorial - Innovative Learning {% endblock %}
+{% block warning %}
+{% for message in messages %}
+<div class="cbox1-{{ message.tags }}">
+    <h4 class="alert-{{ message.tags }}">{{ message }}</h4>
+    <div class="cbox2-{{ message.tags }}">
+        <div class="cross" id="l1"></div>
+        <div class="cross" id="l2"></div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
+
+{% block Loops %}
+<div id='My-code'
+    style="color: rgb(196, 13, 13); text-align: center; font-size: 2rem;font-family: 'Baloo Bhai 2', cursive; padding-top: 20px;text-shadow: -2px -1px rgb(63, 63, 66);">
+    Practice Programs on Loops Statements</div>
+<li id="solution" style="display: none; font-family: 'Baloo Bhai 2', cursive; font-size: 1.5rem; margin-left: 20px;">
+</li> <br><br>
+<ul class="questions">
+    <li id="Loops-1"> Write a C program to print all natural numbers from 1 to n. </li>
+    <li id="Loops-2"> Write a C program to print all natural numbers in reverse (from n to 1)</li>
+    <li id="Loops-3"> Write a C program to print all alphabets from a to z.</li>
+    <li id="Loops-4"> Write a C program to print all even numbers between 1 to 100.</li>
+    <li id="Loops-5"> Write a C program to print all odd number between 1 to 100.</li>
+    <li id="Loops-6"> Write a C program to find sum of all natural numbers between 1 to n.</li>
+    <li id="Loops-7"> Write a C program to find sum of all even numbers between 1 to n</li>
+    <li id="Loops-8"> Write a C program to find sum of all odd numbers between 1 to n</li>
+    <li id="Loops-9"> Write a C program to print multiplication table of any number</li>
+    <li id="Loops-10"> Write a C program to count number of digits in a number</li>
+    <li id="Loops-11"> Write a C program to find first and last digit of a number</li>
+    <li id="Loops-12"> Write a C program to swap first and last digits of a number</li>
+    <li id="Loops-51"> Write a C program to find sum of first and last digit of a number.</li>
+    <li id="Loops-13"> Write a C program to calculate sum of digits of a number</li>
+    <li id="Loops-14"> Write a C program to calculate product of digits of a number</li>
+    <li id="Loops-15"> Write a C program to enter a number and print its reverse</li>
+    <li id="Loops-16"> Write a C program to check whether a number is palindrome or not.</li>
+    <li id="Loops-17"> Write a C program to find frequency of each digit in a given integer</li>
+    <li id="Loops-18"> Write a C program to enter a number and print it in words.</li>
+    <li id="Loops-19"> Write a C program to print all ASCII character with their values </li>
+    <li id="Loops-20"> Write a C program to find power of a number using for loop </li>
+    <li id="Loops-21"> Write a C program to find all factors of a number</li>
+    <li id="Loops-22"> Write a C program to calculate factorial of a number</li>
+    <li id="Loops-23"> Write a C program to find HCF (GCD) of two numbers</li>
+    <li id="Loops-24"> Write a C program to find LCM of two numbers</li>
+    <li id="Loops-25"> Write a C program to check whether a number is Prime number or not.</li>
+    <li id="Loops-26"> Write a C program to print all Prime numbers between 1 to n.</li>
+    <li id="Loops-27"> Write a C program to find sum of all prime numbers between 1 to n</li>
+    <li id="Loops-28"> Write a C program to find all prime factors of a number</li>
+    <li id="Loops-29"> Write a C program to check whether a number is Armstrong number or not.</li>
+    <li id="Loops-30"> Write a C program to print all Armstrong numbers between 1 to n.</li>
+    <li id="Loops-31"> Write a C program to check whether a number is Perfect number or not</li>
+    <li id="Loops-32"> Write a C program to print all Perfect numbers between 1 to n</li>
+    <li id="Loops-33"> Write a C program to check whether a number is Strong number or not</li>
+    <li id="Loops-34"> Write a C program to print all Strong numbers between 1 to n</li>
+    <li id="Loops-35"> Write a C program to print Fibonacci series up to n terms</li>
+    <li id="Loops-36"> Write a C program to find one's complement of a binary number</li>
+    <li id="Loops-37"> Write a C program to find two's complement of a binary number</li>
+    <li id="Loops-38"> Write a C program to convert Binary to Octal number system</li>
+    <li id="Loops-39"> Write a C program to convert Binary to Decimal number system</li>
+    <li id="Loops-40"> Write a C program to convert Binary to Hexadecimal number system</li>
+    <li id="Loops-41"> Write a C program to convert Octal to Binary number system</li>
+    <li id="Loops-42"> Write a C program to convert Octal to Decimal number system</li>
+    <li id="Loops-43"> Write a C program to convert Octal to Hexadecimal number system</li>
+    <li id="Loops-44"> Write a C program to convert Decimal to Binary number system</li>
+    <li id="Loops-45"> Write a C program to convert Decimal to Octal number system</li>
+    <li id="Loops-46"> Write a C program to convert Decimal to Hexadecimal number system</li>
+    <li id="Loops-47"> Write a C program to convert Hexadecimal to Binary number system</li>
+    <li id="Loops-48"> Write a C program to convert Hexadecimal to Octal number system</li>
+    <li id="Loops-49"> Write a C program to convert Hexadecimal to Decimal number system</li>
+    <li id="Loops-50"> Write a C program to print Pascal triangle upto n rows</li>
+    <br><br>
+</ul>
+<div class="codingKiya">
+    <pre></pre>
+    <pre></pre>
+</div>
+
+<div class="codingKiya2" style="display: none;">
+    <div style="text-align: center;">
+        <img class="previous" style="cursor: pointer;" src="https://img.icons8.com/flat-round/64/000000/circled-left-2--v1.png">
+        <p class="previous info" style="color: rgb(31, 126, 94); cursor: pointer;">&nbsp;&nbsp;Back</p>
+    </div>
+    <div style="text-align: center;">
+        <img style="cursor: pointer;" class="home" src="https://img.icons8.com/glyph-neue/64/26e07f/home.png"/>
+        <p style="cursor: pointer; color: rgb(108, 247, 142);" class="home info">&nbsp;&nbsp;Back to Questions</p>
+    </div>
+    <div style="text-align: center;">
+        <img class="next" style="cursor: pointer;" src="https://img.icons8.com/flat-round/64/000000/circled-right-2--v1.png">
+        <p class="next info" style="color: rgb(31, 126, 94); cursor: pointer;">&nbsp;&nbsp;Next</p>
+    </div>
+</div>
+
+
+{% endblock%}
+
+{% block ja_sc %} {% load static %}
+<script src="{% static '/mainpage/innovative1.js' %}"></script>
+<script src="{% static '/mainpage/Programs_javascripts/Loops.js' %}"></script>
+{% endblock %}

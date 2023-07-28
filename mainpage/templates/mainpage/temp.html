@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{% static '/mainpage/all_CSS/innovative124.css' %}">
+    <link rel="stylesheet" href="{% static '/mainpage/all_CSS/innovative1.css' %}">
+    <style>
+        {%if not is_register %}
+        #isear {
+            margin-left: 270px;
+        }
+            {% endif %}
+            {%if not is_true %}
+        .uwel {
+            display: block;
+        }
+        .Welcome {
+            margin-top: 10px;
+        }
+
+        #a42 {
+            list-style: none;
+            padding: 2px;
+            margin: 4px;
+            background: blue;
+            border: 1.3px solid white;
+        }
+
+        #isear {
+            margin-left: 270px;
+        }
+
+        {% endif %}
+        @media screen and (max-width: 1240px) {
+                {%if not is_register %}
+            #id1 .navigation {
+                height: 360px;
+                transition: all 0.7s ease-out;
+            }
+            #id1 .navmedia {
+                height: 0;
+                transition: all 0.5s ease-out;
+            }
+                {% endif %}
+        }
+    </style>
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <nav>
+        <div class="class1" id="id1">
+            {% if is_true %}
+            <img src="/static/mainpage/mainpages_img/logo_django.png" class="logo" id="me_err">
+            {% else %}
+            {% if dp %}
+            <img src="/static/mainpage/mainpages_img/No_DP.jpg" class="logo" id="up_dp">
+            {% else %}
+            <img src="{{ dp_url }}" class="logo" id="up_dp2">
+            {% endif %}
+            {% endif %}
+
+            <ul class="navigation navmedia">
+                <li id="a1" class="nav none"><a id="q" href="/Innovative-Learning">Home</a></li>
+                <li id="a2" class="nav none"><a id="a" href="/Innovative-Learning/courses">Courses</a></li>
+                <li id="a3" class="nav none"><a id="c" href="/Innovative-Learning/contact">Contact Us</a></li>
+                <li id="a5" class="nav none"><a class="blog" href="/blogs">Blogs</a>
+                </li>
+                <input onkeypress="return G_F(event)" style="padding-left: 32px;" type="search"
+                    class="nav search-nav none" id="isear" placeholder="Search here.....">
+                <button type="submit" class="nav none" id="sear">Search</button>
+                {%if is_true %}
+                {%if is_register %}
+                <li id="a4" class="nav none"><a id="b" href="/Innovative-Learning/register">Register</a></li>
+                {% endif %}
+                <li id="a41" class="nav none"><a id="b1" href="/Innovative-Learning/login">Login</a></li>
+                {% else %}
+                <li id="a42" class="nav none"><a id="b2" href="/Innovative-Learning/logout">Logout</a></li>
+                {% endif %}
+            </ul>
+        </div>
+        <div class="burger burger-resp">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    {% block warning %} {% endblock %}
+    {% block Quick %} {% endblock %}
+    {% block C-Tut %} {% endblock %}
+    {% block py-Tut %} {% endblock %}
+    {% block Loops %} {% endblock %}
+    {% block Conditional %} {% endblock %}
+    {% block java-Tut %} {% endblock %}
+    {% block user_login %} {% endblock %}
+    {% block register %} {% endblock %}
+    {% block contactus %} {% endblock %}
+    {% block courses %} {% endblock %}
+    <footer>
+        <div class="cent">
+            Copyright &copy; www.Innovative-Learning.com all rights reserved.
+        </div>
+        <div class="cent">
+            <i class="fa fa-instagram" style="font-size:23px;color:white;margin:8px;"></i>
+            Follow me on <a href="https://Instagram.com/charuni_deshmukh" target="_blank">Instagram</a>
+        </div>
+        <div class="cent">
+            <i class="fa fa-youtube" style="font-size:23px;color:white;margin:8px;"></i>
+            Follow me on <a href="https://youtube.com/channel/UCKCKXUXrgOlelJpAEFz59KA" target="_blank">Youtube</a>
+        </div>
+    </footer>
+    <h1 id="is_true" style="display: none;">{{is_true}}</h1>
+    <h1 id="is_register" style="display: none;">{{is_register}}</h1>
+    {% block ja_sc %} {% endblock %}
+</body>
+
+</html>

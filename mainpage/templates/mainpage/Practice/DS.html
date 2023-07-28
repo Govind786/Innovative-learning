@@ -1,0 +1,78 @@
+{% extends '../temp.html' %}
+{% block title %} C-Tutorial - Innovative Learning {% endblock %}
+{% block warning %}
+{% for message in messages %}
+<div class="cbox1-{{ message.tags }}">
+    <h4 class="alert-{{ message.tags }}">{{ message }}</h4>
+    <div class="cbox2-{{ message.tags }}">
+        <div class="cross" id="l1"></div>
+        <div class="cross" id="l2"></div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
+
+{% block Loops %}
+<div id='My-code'
+    style="color: rgb(196, 13, 13); text-align: center; font-size: 2rem;font-family: 'Baloo Bhai 2', cursive; padding-top: 20px;text-shadow: -2px -1px rgb(63, 63, 66);">
+    Practice Programs on Data Structures</div>
+<li id="solution" style="display: none; font-family: 'Baloo Bhai 2', cursive; font-size: 1.5rem; margin-left: 20px;">
+</li> <br><br>
+<ul class="questions">
+        <li id="DS-1">Write a program to print all locations at which required element is found and also the number of times it occurs in the list.</li>
+        <li id="DS-2">Given an Array of integer of size n.Assume 0 as an invalid number and all other as valid numbers. Convert the array in such a way that if next number is a valid number and same as current number, double its value and replace the next number with 0. After the modification, rearrange the array such that all 0s are shifted to the end. <br>
+        Examples:  <br>
+        Input: arr[] = {2, 2, 0, 4, 0, 8}  <br>
+        Output: 4 4 8 0 0 0  <br>
+        Input: arr[] = {0, 2, 2, 2, 0, 6, 6, 0, 0, 8} <br> Output:  4 2 12 8 0 0 0 0 0 0. 
+        </li>
+        <li id="DS-3">Write a program to perform Push, Pop and display operations on a Stack. </li>
+        <li id="DS-4">Write a program to find whether the given string is a palindrome or not using stack if given a string str.</li>
+        <li id="DS-5">Write a program to reverse given string by using Stack.</li>
+        <li id="DS-6">Write a program to convert infix expression into postfix expression.  </li>
+        <li id="DS-7">Write a program to evaluate postfix expression (using Stack). </li>
+        <li id="DS-8">Write a program that implements Queue using array.</li>
+        <li id="DS-9">Write a program to reverse a Queue.</li>
+        <li id="DS-10">Write a program to implement circular queue using array. </li>
+        <li id="DS-11">Write a program to implement a Linked List</li>
+        <li id="DS-12">Write a program to reverse a Linked List</li>
+        <li id="DS-13">Write a program to insert a node at the end of given Linked List.</li>
+        <li id="DS-14">Write a program to implement a Doubly Linked List. </li>
+        <li id="DS-15">Write a program to perform searching in given Doubly Linked List.</li>
+        <li id="DS-16">Write a program to sort N numbers in ascending order using Bubble sort.</li>
+        <li id="DS-17">Write a program to sort N numbers in ascending order using Insertion sort.</li>
+        <li id="DS-18">Write a program to sort the array in an ascending order using Selection sort. </li>
+        <li id="DS-19">Write a program to sort the array in an ascending order using Merge sort.</li>
+        <li id="DS-20">Write a program to sort the array in an ascending order using Quick sort </li>
+        <li id="DS-21">Write a program to Traverse the Tree Recursively.</li>
+        <li id="DS-22">Write a program to Search an Element in a Tree Recursively. </li>
+        <li id="DS-23">Write a program To Find the Smallest and Largest Elements in the Binary Search Tree.</li>
+    <br><br>
+</ul>
+<div class="codingKiya">
+    <pre></pre>
+    <pre></pre>
+</div>
+
+<div class="codingKiya2" style="display: none;">
+    <div style="text-align: center;">
+        <img class="previous" style="cursor: pointer;" src="https://img.icons8.com/flat-round/64/000000/circled-left-2--v1.png">
+        <p class="previous info" style="color: rgb(31, 126, 94); cursor: pointer;">&nbsp;&nbsp;Back</p>
+    </div>
+    <div style="text-align: center;">
+        <img style="cursor: pointer;" class="home" src="https://img.icons8.com/glyph-neue/64/26e07f/home.png"/>
+        <p style="cursor: pointer; color: rgb(108, 247, 142);" class="home info">&nbsp;&nbsp;Back to Questions</p>
+    </div>
+    <div style="text-align: center;">
+        <img class="next" style="cursor: pointer;" src="https://img.icons8.com/flat-round/64/000000/circled-right-2--v1.png">
+        <p class="next info" style="color: rgb(31, 126, 94); cursor: pointer;">&nbsp;&nbsp;Next</p>
+    </div>
+</div>
+
+
+{% endblock%}
+
+{% block ja_sc %} {% load static %}
+<script src="{% static '/mainpage/innovative1.js' %}"></script>
+<script src="{% static '/mainpage/Programs_javascripts/DS1.js' %}"></script>
+{% endblock %}

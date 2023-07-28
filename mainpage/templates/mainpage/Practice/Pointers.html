@@ -1,0 +1,69 @@
+{% extends '../temp.html' %}
+{% block title %} C-Tutorial - Innovative Learning {% endblock %}
+{% block warning %}
+{% for message in messages %}
+<div class="cbox1-{{ message.tags }}">
+    <h4 class="alert-{{ message.tags }}">{{ message }}</h4>
+    <div class="cbox2-{{ message.tags }}">
+        <div class="cross" id="l1"></div>
+        <div class="cross" id="l2"></div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
+
+{% block Loops %}
+<div id='My-code'
+    style="color: rgb(196, 13, 13); text-align: center; font-size: 2rem;font-family: 'Baloo Bhai 2', cursive; padding-top: 20px;text-shadow: -2px -1px rgb(63, 63, 66);">
+    Practice Programs on Pointers Statements</div>
+<li id="solution" style="display: none; font-family: 'Baloo Bhai 2', cursive; font-size: 1.5rem; margin-left: 20px;">
+</li> <br><br>
+<ul class="questions">
+        <li id='Pointers-1'> Write a C program to create, initialize and use pointers. </li>
+        <li id='Pointers-2'> Write a C program to add two numbers using pointers. </li>
+        <li id='Pointers-3'> Write a C program to swap two numbers using pointers. </li>
+        <li id='Pointers-4'> Write a C program to input and print array elements using pointer. </li>
+        <li id='Pointers-5'> Write a C program to copy one array to another using pointers. </li>
+        <li id='Pointers-6'> Write a C program to swap two arrays using pointers. </li>
+        <li id='Pointers-7'> Write a C program to reverse an array using pointers. </li>
+        <li id='Pointers-8'> Write a C program to search an element in array using pointers. </li>
+        <li id='Pointers-9'> Write a C program to access two dimensional array using pointers. </li>
+        <li id='Pointers-10'> Write a C program to add two matrix using pointers. </li>
+        <li id='Pointers-11'> Write a C program to multiply two matrix using pointers. </li>
+        <li id='Pointers-12'> Write a C program to find length of string using pointers. </li>
+        <li id='Pointers-13'> Write a C program to copy one string to another using pointers. </li>
+        <li id='Pointers-14'> Write a C program to concatenate two strings using pointers. </li>
+        <li id='Pointers-15'> Write a C program to compare two strings using pointers. </li>
+        <li id='Pointers-16'> Write a C program to find reverse of a string using pointers. </li>
+        <li id='Pointers-17'> Write a C program to sort array using pointers. </li>
+        <li id='Pointers-18'> Write a C program to return multiple value from function using pointers. </li>
+    
+    <br><br>
+</ul>
+<div class="codingKiya">
+    <pre style="display: none; margin-bottom: 40px; margin-left: 40px;"></pre>
+    <pre style="display: none; margin-bottom: 40px; margin-left: 40px;"></pre>
+</div>
+
+<div class="codingKiya2" style="display: none;">
+    <div style="text-align: center;">
+        <img class="previous" style="cursor: pointer;" src="https://img.icons8.com/flat-round/64/000000/circled-left-2--v1.png">
+        <p class="previous info" style="color: rgb(31, 126, 94); cursor: pointer;">&nbsp;&nbsp;Back</p>
+    </div>
+    <div style="text-align: center;">
+        <img style="cursor: pointer;" class="home" src="https://img.icons8.com/glyph-neue/64/26e07f/home.png"/>
+        <p style="cursor: pointer; color: rgb(108, 247, 142);" class="home info">&nbsp;&nbsp;Back to Questions</p>
+    </div>
+    <div style="text-align: center;">
+        <img class="next" style="cursor: pointer;" src="https://img.icons8.com/flat-round/64/000000/circled-right-2--v1.png">
+        <p class="next info" style="color: rgb(31, 126, 94); cursor: pointer;">&nbsp;&nbsp;Next</p>
+    </div>
+</div>
+
+
+{% endblock%}
+
+{% block ja_sc %} {% load static %}
+<script src="{% static '/mainpage/innovative1.js' %}"></script>
+<script src="{% static '/mainpage/Programs_javascripts/Pointers.js' %}"></script>
+{% endblock %}

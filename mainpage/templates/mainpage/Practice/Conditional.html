@@ -1,0 +1,84 @@
+{% extends '../temp.html' %}
+{% block title %} C-Tutorial - Innovative Learning {% endblock %}
+{% block warning %}
+{% for message in messages %}
+<div class="cbox1-{{ message.tags }}">
+    <h4 class="alert-{{ message.tags }}">{{ message }}</h4>
+    <div class="cbox2-{{ message.tags }}">
+        <div class="cross" id="l1"></div>
+        <div class="cross" id="l2"></div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
+
+{% block Conditional %}
+<div id='My-code' style="color: rgb(196, 13, 13); text-align: center; font-size: 2rem;font-family: 'Baloo Bhai 2', cursive; padding-top: 20px;text-shadow: -2px -1px rgb(63, 63, 66);">Practice Programs on Conditional Statements</div>
+<li id="solution" style="display: none; font-family: 'Baloo Bhai 2', cursive; font-size: 1.5rem; margin-left: 20px;"> </li> <br><br>
+<ul class="questions">
+    <li id="Conditional-1"> Write a C program to find maximum between two numbers.</li>
+    <li id="Conditional-2"> Write a C program to find maximum between three numbers.</li>
+    <li id="Conditional-3"> Write a C program to check whether a number is negative, positive or zero.</li>
+    <li id="Conditional-4"> Write a C program to check whether a number is divisible by 5 and 11 or not.</li>
+    <li id="Conditional-5"> Write a C program to check whether a number is even or odd.</li>
+    <li id="Conditional-6"> Write a C program to check whether a year is leap year or not.</li>
+    <li id="Conditional-7"> Write a C program to check whether a character is alphabet or not.</li>
+    <li id="Conditional-8"> Write a C program to input any alphabet and check whether it is vowel or consonant.</li>
+    <li id="Conditional-9"> Write a C program to input any character and check whether it is alphabet, digit or special .</li>
+    <li id="Conditional-10"> Write a C program to check whether a character is uppercase or lowercase alphabet</li>
+    <li id="Conditional-11"> Write a C program to input week number and print week day</li>
+    <li id="Conditional-12"> Write a C program to input month number and print number of days in that month.</li>
+    <li id="Conditional-13"> Write a C program to count total number of notes in given amount</li>
+    <li id="Conditional-14"> Write a C program to input angles of a triangle and check whether triangle is valid or not.</li>
+    <li id="Conditional-15"> Write a C program to input all sides of a triangle and check whether triangle is valid or not.</li>
+    <li id="Conditional-16"> Write a C program to check whether the triangle is equilateral, isosceles or scalene triangle.</li>
+    <li id="Conditional-17"> Write a C program to find all roots of a quadratic equation</li>
+    <li id="Conditional-18"> Write a C program to calculate profit or loss.</li>
+    <li id="Conditional-19"> Write a C program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer.
+        Calculate percentage and grade according to following: <br>
+        Percentage >= 90% : Grade A  <br>
+        Percentage >= 80% : Grade B  <br>
+        Percentage >= 70% : Grade C  <br>
+        Percentage >= 60% : Grade D  <br>
+        Percentage >= 40% : Grade E  <br>
+        Percentage < 40% : Grade F </li>
+    <li id="Conditional-20"> Write a C program to input basic salary of an employee and calculate its Gross salary according to following:  <br>
+        Basic Salary <= 10000 : HRA = 20%, DA = 80%  <br>
+        Basic Salary <= 20000 : HRA = 25%, DA = 90%  <br>
+        Basic Salary > 20000 : HRA = 30%, DA = 95%  <br>
+    </li>
+    <li id="Conditional-21"> Write a C program to input electricity unit charges and calculate total electricity bill according to the given
+        condition: <br>
+        For first 50 units Rs. 0.50/unit <br>
+        For next 100 units Rs. 0.75/unit <br>
+        For next 100 units Rs. 1.20/unit <br>
+        For unit above 250 Rs. 1.50/unit <br>
+        An additional surcharge of 20% is added to the bill</li> <br><br>
+</ul>
+
+<div class="codingKiya">
+    <pre style="display: none; margin-bottom: 40px; margin-left: 40px;"></pre>
+    <pre style="display: none; margin-bottom: 40px; margin-left: 40px;"></pre>
+</div>
+
+<div class="codingKiya2" style="display: none;">
+    <div style="text-align: center;">
+        <img class="previous" style="cursor: pointer;" src="https://img.icons8.com/flat-round/64/000000/circled-left-2--v1.png">
+        <p class="previous info" style="color: rgb(31, 126, 94); cursor: pointer;">&nbsp;&nbsp;Back</p>
+    </div>
+    <div style="text-align: center;">
+        <img style="cursor: pointer;" class="home" src="https://img.icons8.com/glyph-neue/64/26e07f/home.png"/>
+        <p style="cursor: pointer; color: rgb(108, 247, 142);" class="home info">&nbsp;&nbsp;Back to Questions</p>
+    </div>
+    <div style="text-align: center;">
+        <img class="next" style="cursor: pointer;" src="https://img.icons8.com/flat-round/64/000000/circled-right-2--v1.png">
+        <p class="next info" style="color: rgb(31, 126, 94); cursor: pointer;">&nbsp;&nbsp;Next</p>
+    </div>
+</div>
+
+{% endblock%}
+
+{% block ja_sc %} {% load static %}
+<script src="{% static '/mainpage/innovative1.js' %}"></script>
+<script src="{% static '/mainpage/Programs_javascripts/Conditional.js' %}"></script>
+{% endblock %}

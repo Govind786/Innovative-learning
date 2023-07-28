@@ -1,0 +1,207 @@
+{% extends '../temp.html' %}
+{% block title %} Java-Tutorial - Innovative Learning {% endblock %}
+{% block warning %}
+{% for message in messages %}
+<div class="cbox1-{{ message.tags }}">
+  <h4 class="alert-{{ message.tags }}">{{ message }}</h4>
+  <div class="cbox2-{{ message.tags }}">
+    <div class="cross" id="l1"></div>
+    <div class="cross" id="l2"></div>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}
+
+{% block java-Tut %}
+<hr class="my_slide">
+<div class="page">
+  <div id="tog" class="sidebar mediaside">
+    <h2>Java-Tutorial</h2>
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-1">What is Java</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-2">History of Java</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-3">Features of Java</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-4">JVM: Java Virtual Machine </p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-5">First Java Program</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-6">Comments in Java</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-7">Variables in Java</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-8">Data Types in Java</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-10">Keywords in Java</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-12">Operators in Java</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-15">Constant in Java</p>
+    </li>
+
+    <h2>Control Statements</h2>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-19">Java if else Statement</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-31">switch Statement</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-33">for Loop</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-20">do-while Loop</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-32">while Loop</p>
+    </li>
+
+    <h2>Java Important Topics</h2>
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-21">Java Strings</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-22">Java Array</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-23">Java OOPs Concepts</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-24">Objects and Classes in Java</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-9">Method in Java</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-11">Constructors in Java</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-13">this and super keywords</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-14">Inheritance in Java</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-16">Abstract class in Java</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-30">Interface in Java</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-17">Java Exception Handling</p>
+    </li>
+    
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-18">Multithreading in Java</p>
+    </li>
+
+  </div>
+  <div style="background-color: rgb(216, 229, 231); margin-right: 10px;"></div>
+  <div class="C-Tut-Details">
+    <p id="Head">What is Java </p>
+  <p class="info">
+    Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language. <br>
+
+    Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the Oak name to Java. <br>
+
+    Platform: Any hardware or software environment in which a program runs, is known as a platform. Since Java has a runtime environment (JRE) and API, it is called a platform.<br>
+  </p>
+
+  <p id="Head">Application</p>
+  <p class="info">
+    According to Sun, 3 billion devices run Java. There are many devices where Java is currently used. Some of them are as follows: <br>
+    1. &nbsp; Desktop Applications such as acrobat reader, media player, antivirus, etc. <br>
+    2. &nbsp; Web Applications such as irctc.co.in, javatpoint.com, etc. <br>
+    3. &nbsp; Enterprise Applications such as banking applications. <br>
+    4. &nbsp; Mobile <br> 
+    5. &nbsp; Embedded System <br>
+    6. &nbsp; Smart Card <br>
+    7. &nbsp; Robotics <br>
+    8. &nbsp; Games, etc. <br>
+  </p>
+  <p id="Head">Java Platforms / Editions</p>
+  <p class="info">
+    There are 4 platforms or editions of Java: <br>
+    <span style="color: rgb(35, 54, 33);">1) Java SE (Java Standard Edition) <br></span>
+    It is a Java programming platform. It includes Java programming APIs such as java.lang, java.io, java.net, java.util, java.sql, java.math etc. It includes core topics like OOPs, String, Regex, Exception, Inner classes, Multithreading, I/O Stream, Networking, AWT, Swing, Reflection, Collection, etc. <br>
+    <span style="color: rgb(35, 54, 33);">2) Java EE (Java Enterprise Edition) <br></span>
+    It is an enterprise platform which is mainly used to develop web and enterprise applications. It is built on the top of the Java SE platform. It includes topics like Servlet, JSP, Web Services, EJB, JPA, etc. <br>
+    <span style="color: rgb(35, 54, 33);">3) Java ME (Java Micro Edition) <br></span>
+    It is a micro platform which is mainly used to develop mobile applications. <br>
+    <span style="color: rgb(35, 54, 33);">4) JavaFX <br></span>
+    It is used to develop rich internet applications. It uses a light-weight user interface API. <br>
+  </p>
+  </div>
+</div>
+{% endblock %}
+
+{% block ja_sc %}
+{% load static %}
+<script src="{% static '/mainpage/Tut_javascripts/Java_Tut.js' %}"></script>
+<script src="{% static '/mainpage/innovative.js' %}"></script>
+{% endblock %}

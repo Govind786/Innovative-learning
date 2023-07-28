@@ -1,0 +1,194 @@
+.sidebar p {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    margin-left: -4px;
+    font-size: 1.4rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.sidebar p:hover {
+    transition: all 0.3s ease-out;
+    color: rgb(136, 31, 31);
+    text-decoration: underline;
+}
+
+.questions li:hover{
+    transition: all 0.3s ease-out;
+    color: rgb(15, 78, 196);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.sidebar img {
+    width: 6%;
+    height: 22px;
+    margin-left: 15px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.sidebar h2 {
+    color: rgb(214, 99, 99);
+    margin: 8px;
+    font-size: 2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 25% 1% 74%;
+}
+
+.sidebar {
+    background: rgb(226, 226, 231);
+}
+
+.sidebar li {
+    display: flex;
+}
+
+.C-Tut-Details {
+    padding: 10px;
+    background: rgb(240, 234, 225);
+}
+
+table {
+    font-family: 'Baloo Bhai 2', cursive;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px;
+    margin-left: 0;
+    border: 2px solid rgb(53, 50, 50);
+}
+
+td, th {
+    padding: 8px;
+    border: 2px solid rgb(107, 101, 101);
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.info {
+    font-size: 1.1rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 5px;
+}
+
+pre {
+    font-size: 1.1rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 5px;
+    border: 1px solid rgb(160, 156, 156);
+    width: fit-content;
+    background-color: rgb(235, 241, 241);
+    padding: 7px;
+}
+
+.questions{
+    font-size: 1.1rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    margin-left: 25px;
+    margin-top: -25px;
+    width: fit-content;
+    padding: 7px;
+}
+
+.questions li{
+    margin: 10px;
+    list-style-type: decimal;
+}
+
+.questions pre{
+    list-style-type: decimal;
+}
+
+#Head {
+    color: rgb(49, 83, 25);
+    margin: 5px;
+    font-size: 1.7rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.codingKiya{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.codingKiya pre{
+    display: none;  
+    margin-bottom: 40px; 
+    margin-left: 40px;
+}
+
+.codingKiya2{
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+}
+
+.my_slide{
+    display: none;
+}
+
+.if-else-img{
+    margin-left: 16%;
+}
+
+.previous:nth-child(1){
+    cursor: pointer; 
+}
+
+.previous:nth-child(2){
+    color: rgb(31, 126, 94); 
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1240px) {
+    .page{
+        display: block;
+    }
+
+    .sidebar{
+        display: block;
+        position: absolute;
+        margin-top: 12px;
+        width: 100%;
+    }
+
+    .mediaside{
+        display: none;
+    }
+
+    .my_slide{
+        display: block;
+        border: 3px solid rgb(21, 143, 127);
+        cursor: pointer;
+        width: 35%;
+        margin-top: 10px;
+        margin-left: 32%;
+    }
+
+    .if-else-img{
+        margin-left: 1%;
+        width: 95%;
+    }
+    
+    .previous:nth-child(1){
+        cursor: pointer; 
+        margin-right: 11%;
+    }
+
+    .codingKiya pre{
+        display: none;  
+        margin-left: 2px;
+        margin-bottom: 40px;
+        font-size: 0.95rem;
+    }
+
+    .codingKiya{
+        display: flex;
+        grid-template-columns: 50% 50%;
+    }
+}

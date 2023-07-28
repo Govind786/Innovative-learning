@@ -1,0 +1,234 @@
+{% extends '../temp.html' %}
+{% block title %} C-Tutorial - Innovative Learning {% endblock %}
+{% block warning %}
+{% for message in messages %}
+<div class="cbox1-{{ message.tags }}">
+    <h4 class="alert-{{ message.tags }}">{{ message }}</h4>
+    <div class="cbox2-{{ message.tags }}">
+        <div class="cross" id="l1"></div>
+        <div class="cross" id="l2"></div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
+
+{% block C-Tut %}
+<hr class="my_slide">
+<div class="page">
+    <div id="tog" class="sidebar mediaside">
+        <h2>C-Tutorial</h2>
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-1">What is C language</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-2">History of C</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-3">Features of C</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-4">How to install C</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-5">First C Program</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-6">Comments in C</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-7">Variables in C</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-8">Data-Types in C</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-9">printf() scanf()</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-10">Keywords in C</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-11">Identifiers in C</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-12">Operators in C</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-13">Format Specifiers in C</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-14">Escape Sequence in C</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-15">Constants in C</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-16">Literals in C</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-17">Tokens in C</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-18">Bitwise Operators in C</p>
+        </li>
+        <h2>C Control Statements</h2>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-19">C if else Statement</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-31">switch Statement</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-20">do-while Loop</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-32">while Loop</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-33">for Loop</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-30">Ternary Operator in C</p>
+        </li>
+        <h2>C Important Topics</h2>
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-21">C Strings</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-22">C Array</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-23">C Pointers</p>
+        </li>
+
+        <li style="list-style: none;">
+            <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+            <p id="Tut-C-24">C Functions</p>
+        </li>
+    </div>
+    <div style="background-color: rgb(216, 229, 231); margin-right: 10px;"></div>
+    <div class="C-Tut-Details">
+        <p id="Head">What is C Language </p>
+        <p class="info">
+            The C Language is developed by Dennis Ritchie for creating system applications that directly interact with
+            the hardware devices such as drivers, kernels, etc. <br>
+
+            C programming is considered as the base for other programming languages, that is why it is known as mother
+            language. <br>
+
+            It can be defined by the following ways: <br>
+
+            1. Mother language <br>
+            2. System programming language <br>
+            3. Procedure-oriented programming language <br>
+            4. Structured programming language <br>
+            5. Mid-level programming language <br>
+        </p>
+        <p id="Head">1) C as a mother language </p>
+        <p class="info">
+            C language is considered as the mother language of all the modern programming languages because most of the
+            compilers, JVMs, Kernels, etc. are written in C language, and most of the programming languages follow C
+            syntax, for example, C++, Java, C#, etc.  <br>
+
+            It provides the core concepts like the array, strings, functions, file handling, etc. that are being used in
+            many languages like C++, Java, C#, etc.  <br>
+        </p>
+        <p id="Head">2) C as a system programming language </p>
+        <p class="info">
+            A system programming language is used to create system software. C language is a system programming language
+            because it can be used to do low-level programming (for example driver and kernel). It is generally used to
+            create hardware devices, OS, drivers, kernels, etc. For example, Linux kernel is written in C.  <br>
+
+            It can't be used for internet programming like Java, .Net, PHP, etc.  <br>
+        </p>
+        <p id="Head">3) C as a procedural language</p>
+        <p class="info">
+            A procedure is known as a function, method, routine, subroutine, etc. A procedural language specifies a
+            series of steps for the program to solve the problem.  <br>
+
+            A procedural language breaks the program into functions, data structures, etc.  <br>
+
+            C is a procedural language. In C, variables and function prototypes must be declared before being used.
+        </p>
+        <p id="Head">4) C as a structured programming language</p>
+        <p class="info">
+            A structured programming language is a subset of the procedural language. Structure means to break a program
+            into parts or blocks so that it may be easy to understand.  <br>
+
+
+            In the C language, we break the program into parts using functions. It makes the program easier to
+            understand and modify.
+        </p>
+        <p id="Head">5) C as a mid-level programming language</p>
+        <p class="info">
+            C is considered as a middle-level language because it supports the feature of both low-level and high-level
+            languages.  <br> C language program is converted into assembly code, it supports pointer arithmetic (low-level),
+            but it is machine independent (a feature of high-level).  <br>
+
+            A Low-level language is specific to one machine, i.e., machine dependent. It is machine dependent, fast to
+            run. But it is not easy to understand.  <br>
+
+            A High-Level language is not specific to one machine, i.e., machine independent. It is easy to understand.
+        </p>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block ja_sc %}
+{% load static %}
+<script src="{% static '/mainpage/Tut_javascripts/C_Tut.js' %}"></script>
+<script src="{% static '/mainpage/innovative.js' %}"></script>
+{% endblock %}

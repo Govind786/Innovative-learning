@@ -1,0 +1,219 @@
+{% extends '../temp.html' %}
+{% block title %} Python-Tutorial - Innovative Learning {% endblock %}
+{% block warning %}
+{% for message in messages %}
+<div class="cbox1-{{ message.tags }}">
+  <h4 class="alert-{{ message.tags }}">{{ message }}</h4>
+  <div class="cbox2-{{ message.tags }}">
+    <div class="cross" id="l1"></div>
+    <div class="cross" id="l2"></div>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}
+
+{% block py-Tut %}
+<hr class="my_slide">
+<div class="page">
+  <div id="tog" class="sidebar mediaside">
+    <h2>C-Tutorial</h2>
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-1">Python</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-2">History of Python</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-3">Python Applications</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-4">How to install Python</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-5">Python Variables</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-6">Python Comments</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-8">Data-Types in Python</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-10">Keywords in Python</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-11">Indentation in Python</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-12">Python Operators</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-13">Python If-else</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-32">while Loop</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-33">for Loop</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-30">break / continue / pass</p>
+    </li>
+    
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-21">Python String</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-22">Python List</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-23">Python Tuple</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-24">Python set</p>
+    </li>
+    
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-7">Python Dictionary</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-9">Python Function</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-14">Python Main Function</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-15">Python Built-in Functions</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-16">Python Lambda Functions</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-17">Python File Handling</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-18">Python Exception</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-19">Python Random module</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-20">Python Sending Email</p>
+    </li>
+
+    <li style="list-style: none;">
+      <img src="/static/mainpage/C_tut_img/imp_django.png" alt="">
+      <p id="Tut-C-31">Python OOPs Concepts</p>
+    </li>
+
+  </div>
+  <div style="background-color: rgb(216, 229, 231); margin-right: 10px;"></div>
+  <div class="C-Tut-Details">
+    <p id="Head">Python Tutorial</p>
+  <p class="info">
+    Python tutorial provides basic and advanced concepts of Python. Our Python tutorial is designed for beginners and professionals.  <br>
+    Python is a simple, general purpose, high level, and object-oriented programming language.  <br>
+    Python is an interpreted scripting language also. Guido Van Rossum is known as the founder of Python programming.  <br>
+  </p>
+  <p id="Head">What is Python</p>
+  <p class="info">
+    ~ &nbsp; Python is a general purpose, dynamic, high-level, and interpreted programming language. It supports Object Oriented programming approach to develop applications. It is simple and easy to learn and provides lots of high-level data structures.  <br>
+    ~ &nbsp; Python is easy to learn yet powerful and versatile scripting language, which makes it attractive for Application Development.  <br>
+    ~ &nbsp; Python's syntax and dynamic typing with its interpreted nature make it an ideal language for scripting and rapid application development.  <br>
+    ~ &nbsp; Python supports multiple programming pattern, including object-oriented, imperative, and functional or procedural programming styles.  <br>
+    ~ &nbsp; Python is not intended to work in a particular area, such as web programming. That is why it is known as multipurpose programming language because it can be used with web, enterprise, 3D CAD, etc.  <br>
+    ~ &nbsp; We don't need to use data types to declare variable because it is dynamically typed so we can write a=10 to assign an integer value in an integer variable.  <br>
+    ~ &nbsp; Python makes the development and debugging fast because there is no compilation step included in Python development, and edit-test-debug cycle is very fast.  <br>
+  </p>
+  <p id="Head">Why to Learn Python?</p>
+  <p class="info">
+    Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.   <br>
+    Python is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain. I will list down some of the key advantages of learning Python:   <br>
+    ~ &nbsp; Python is Interpreted − Python is processed at runtime by the interpreter. You do not need to compile your program before executing it. This is similar to PERL and PHP.  <br>
+    ~ &nbsp; Python is Interactive − You can actually sit at a Python prompt and interact with the interpreter directly to write your programs.  <br>     
+    ~ &nbsp; Python is Object-Oriented − Python supports Object-Oriented style or technique of programming that encapsulates code within objects.  <br>     
+    ~ &nbsp; Python is a Beginner's Language − Python is a great language for the beginner-level programmers and supports the development of a wide range of applications from simple text processing to WWW browsers to games.  <br>
+  </p>
+  <p id="Head">Characteristics of Python</p>
+  <p class="info">
+    Following are important characteristics of Python Programming −   <br>
+    ~ &nbsp; It supports functional and structured programming methods as well as OOP.  <br>
+    ~ &nbsp; It can be used as a scripting language or can be compiled to byte-code for building large applications.  <br>     
+    ~ &nbsp; It provides very high-level dynamic data types and supports dynamic type checking.  <br>     
+    ~ &nbsp; It supports automatic garbage collection.  <br>
+    ~ &nbsp; It can be easily integrated with C, C++, COM, ActiveX, CORBA, and Java.  <br>
+  </p>
+  <p id="Head">Applications of Python</p>
+  <p class="info">
+    As mentioned before, Python is one of the most widely used language over the web. I'm going to list few of them here:   <br>
+    ~ &nbsp; Easy-to-learn − Python has few keywords, simple structure, and a clearly defined syntax. This allows the student to pick up the language quickly.  <br>
+    ~ &nbsp; Easy-to-read − Python code is more clearly defined and visible to the eyes.  <br>      
+    ~ &nbsp; Easy-to-maintain − Python's source code is fairly easy-to-maintain.  <br>      
+    ~ &nbsp; A broad standard library − Python's bulk of the library is very portable and cross-platform compatible on UNIX, Windows, and Macintosh.  <br>      
+    ~ &nbsp; Interactive Mode − Python has support for an interactive mode which allows interactive testing and debugging of snippets of code.  <br>      
+    ~ &nbsp; Portable − Python can run on a wide variety of hardware platforms and has the same interface on all platforms.  <br>      
+    ~ &nbsp; Extendable − You can add low-level modules to the Python interpreter. These modules enable programmers to add to or customize their tools to be more efficient.  <br>      
+    ~ &nbsp; Databases − Python provides interfaces to all major commercial databases.  <br>      
+    ~ &nbsp; GUI Programming − Python supports GUI applications that can be created and ported to many system calls, libraries and windows systems, such as Windows MFC, Macintosh, and the X Window system of Unix.  <br>     
+    Scalable − Python provides a better structure and support for large programs than shell scripting.  <br>
+  </p>
+  </div>
+</div>
+{% endblock %}
+
+{% block ja_sc %}
+{% load static %}
+<script src="{% static '/mainpage/Tut_javascripts/py_Tut.js' %}"></script>
+<script src="{% static '/mainpage/innovative.js' %}"></script>
+{% endblock %}

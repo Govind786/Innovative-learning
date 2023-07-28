@@ -1,0 +1,32 @@
+{% extends 'blogs/basepage.html' %}
+{% block img_blog %}
+<div class="blog-nav nav-blog">
+    <a href="/blogs" class="tech-ref">Blog Home</a>
+    <a href="/blogs/gen-blog" class="tech-ref">Other Blogs</a>
+    <a href="/blogs/music" class="tech-ref">Listen Music</a>
+    <a href="/blogs/suggest" class="tech-ref">Suggestions</a>
+    <input type="search" name="tech-search" id="" placeholder="Search Here......" class="tech-s-b">
+    <button id="ser-button">Search</button>
+    <li class="resp none"><a href="/" id="IL">Innovative Learning</a></li>
+</div> {% endblock %}
+{% block title %} Music - Innovative Learning {% endblock %}
+
+{% block Music %}
+<div class="music">
+    <p class="music-text">Feel Music</p>
+    <a href="/blogs/back"><img id="back" src="https://img.icons8.com/flat-round/50/000000/back--v1.png" /></a>
+    <img id="play" src="https://img.icons8.com/flat-round/50/000000/play--v1.png" />
+    <a href="/blogs/next"><img id="forward" src="https://img.icons8.com/flat-round/50/000000/forward--v1.png" /></a>
+
+    <audio id="my-song">
+        <source src="{{ music_url }}" type="audio/mp3">
+    </audio>
+
+</div>
+
+{% endblock %}
+
+{% block java_sc %}
+{% load static %}
+<script src="{% static '/blogs/music_js/music123.js' %}"></script>
+{% endblock %}
