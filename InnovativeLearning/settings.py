@@ -113,7 +113,7 @@ STATIC_URL = '/static/'
 
 if not DEBUG:
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+    STATICFILES_STORAGE = '/static/'
 
 # user_image manage
 MEDIA_ROOT = os.path.join(BASE_DIR, 'display_pictures')
